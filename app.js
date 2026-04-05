@@ -28,7 +28,7 @@ scanBtn.onclick = async () => {
   scanBtn.disabled = false;
 };
 
-function sleep(ms)=>new Promise(r=>setTimeout(r,ms));
+function sleep(ms) { return new Promise(r => setTimeout(r, ms)); }
 
 // === PWA installability ===
 if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js');
